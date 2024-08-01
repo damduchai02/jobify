@@ -25,7 +25,8 @@ function JobsList() {
   const page = data?.page || 0;
   const totalPages = data?.totalPages || 0;
 
-  cónt;
+  if (isPending) return <h2 className="text-xl">Please Wait...</h2>;
+
   if (jobs.length < 1) return <h2 className="text-xl">No Jobs Found...</h2>;
 
   return (
