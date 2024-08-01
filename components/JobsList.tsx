@@ -15,7 +15,7 @@ function JobsList() {
 
   const pageNumber = Number(searchParams.get("page")) || 1;
 
-  const { data } = useQuery({
+  const { data, isPending } = useQuery({
     queryKey: ["jobs", search ?? "", jobStatus, pageNumber],
     queryFn: () => getAllJobsAction({ search, jobStatus, page: pageNumber }),
   });
@@ -25,6 +25,7 @@ function JobsList() {
   const page = data?.page || 0;
   const totalPages = data?.totalPages || 0;
 
+  cónt;
   if (jobs.length < 1) return <h2 className="text-xl">No Jobs Found...</h2>;
 
   return (

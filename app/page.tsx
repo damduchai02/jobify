@@ -27,8 +27,8 @@ function Home() {
             </Button>
             <div className="flex flex-col border border-primary p-2">
               <span className="font-medium">User Login</span>
-              <span>Email: diyiv27900@tiervio.com</span>
-              <span>Password: diyiv27900@tiervio.com</span>
+              <span>Email: rerova2477@leacore.com</span>
+              <span>Password: rerova2477@leacore.com</span>
             </div>
           </div>
         </div>
